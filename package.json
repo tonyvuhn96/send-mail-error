@@ -20,9 +20,5 @@
   "devDependencies": {
     "nodemon": "^1.18.7"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.com:nhadatmoi/backend-development/send-mail-error.git"
-  },
   "homepage": "https://nhadatmoi.net"
 }
