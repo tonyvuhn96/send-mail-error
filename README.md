@@ -72,8 +72,8 @@ const cron = schedule.scheduleJob("00 20 * * *", async () => {
 This script is provided under the [MIT License](LICENSE).
 
 Feel free to modify and use it according to your requirements.
-```
 
 Note that you need to adjust the configuration details in the .env file to match your environment before running the code.
+
 
 Try our demo: [Exam24h](https://exam24h.com)
