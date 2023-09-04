@@ -24,8 +24,8 @@ const ses_config = {
   apiVersion: process.env.AWS_SES_API_VERSION,
 };
 AWS.config.update(ses_config);
-const base64ToName = Buffer.from("Nhà Đất Mới").toString("base64");
-const finalToName = `=?UTF-8?B?${base64ToName}?= <no-reply@nhadatmoi.net>`;
+const base64ToName = Buffer.from("Exam24h").toString("base64");
+const finalToName = `=?UTF-8?B?${base64ToName}?= <no-reply@exam24h.com>`;
 
 
 const cron = schedule.scheduleJob("00 20 * * *", async () => {
@@ -92,18 +92,6 @@ const uploadFile = (filePath, fileName) => {
       }
     }
   });
-};
-
-const deleteFile = async (fileName) => {
-  try {
-    const params = {
-      Bucket: BUCKET_NAME,
-      Key: `${fileName}`,
-    };
-    await s3.deleteObject(params).promise();
-  } catch (err) {
-    errorLog(`AWS S3 delete file error ${err.message}`);
-  }
 };
 
 const getParam = (email, content, title) => {
