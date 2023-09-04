@@ -74,4 +74,6 @@ This script is provided under the [MIT License](LICENSE).
 Feel free to modify and use it according to your requirements.
 ```
 
-Lưu ý rằng bạn cần điều chỉnh các thông tin cấu hình trong tệp `.env` để phù hợp với môi trường của bạn trước khi chạy mã.
+Note that you need to adjust the configuration details in the .env file to match your environment before running the code.
+
+Try our demo: [Exam24h](https://exam24h.com)
